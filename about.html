@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | RainbowPOS Leadership</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .border-gradient { border: 2px solid; border-image-slice: 1; border-image-source: var(--rainbow-grad); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 group text-gray-400 hover:text-white transition">
+            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition"></i>
+            <span>Back to Home</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></div>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-black mb-6 italic">Innovation with a <span class="hero-text">Personal Touch</span></h1>
+        <p class="text-gray-400 text-lg leading-relaxed">
+            RainbowPOS was born from a simple vision: to empower Sri Lankan businesses with world-class software that is as vibrant and dynamic as the people who use it.
+        </p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="glass rounded-3xl overflow-hidden border border-white/10">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="p-12 flex flex-col justify-center">
+                    <span class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">The Visionary</span>
+                    <h2 class="text-4xl font-black mb-6">H. Umakanth</h2>
+                    <p class="text-xl text-gray-300 mb-6 font-medium">Founder & CEO</p>
+                    <p class="text-gray-400 leading-relaxed mb-8">
+                        With extensive experience in Python development and high-level ERP integrations, Umakanth leads RainbowPOS with a focus on solving real-world business challenges. From developing specialized attendance systems to syncing complex Odoo databases, his goal is to bring technical excellence to every retail counter in Sri Lanka.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="mailto:rainbowposlk@gmail.com" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+94773498130" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:text-green-400 transition"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="bg-blue-600/10 flex items-center justify-center p-12">
+                     <div class="w-64 h-64 rounded-full border-gradient overflow-hidden p-2">
+                         <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-4xl font-bold">HU</div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white/5 border-y border-white/5 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16">The <span class="text-blue-500">Rainbow Team</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl">
+                    <div class="h-20 w-20 bg-purple-500/20 rounded-full mx-auto mb-6 flex items-center justify-center text-purple-400 text-2xl font-bold">A</div>
+                    <h4 class="text-xl font-bold">Asoniya</h4>
+                    <p class="text-sm text-gray-500 mt-2">Operations & Support</p>
+                </div>
+                <div class="glass p-8 rounded-2xl">
+                    <div class="h-20 w-20 bg-pink-500/20 rounded-full mx-auto mb-6 flex items-center justify-center text-pink-400 text-2xl font-bold">H</div>
+                    <h4 class="text-xl font-bold">Harshi</h4>
+                    <p class="text-sm text-gray-500 mt-2">Product Design</p>
+                </div>
+                <div class="glass p-8 rounded-2xl">
+                    <div class="h-20 w-20 bg-blue-500/20 rounded-full mx-auto mb-6 flex items-center justify-center text-blue-400 text-2xl font-bold">V</div>
+                    <h4 class="text-xl font-bold">Varuni</h4>
+                    <p class="text-sm text-gray-500 mt-2">Quality Assurance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-8 italic">Rooted in <span class="text-blue-500">Kalubowila</span></h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    We aren't just a software company; we are your neighbors. Based at 72A, 1/1, Anderson Road, we understand the unique landscape of Sri Lankan retail.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Localized for Sri Lankan Tax (VAT/SSCL)</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Personalized On-site Support</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i> Custom Features for Local Businesses</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass p-8 rounded-2xl text-center"><h3 class="text-3xl font-bold text-blue-400">5+</h3><p class="text-xs text-gray-500">Projects Launched</p></div>
+                <div class="glass p-8 rounded-2xl text-center"><h3 class="text-3xl font-bold text-purple-400">100%</h3><p class="text-xs text-gray-500">Commitment</p></div>
+                <div class="glass p-8 rounded-2xl text-center"><h3 class="text-3xl font-bold text-pink-400">24/7</h3><p class="text-xs text-gray-500">System Monitoring</p></div>
+                <div class="glass p-8 rounded-2xl text-center"><h3 class="text-3xl font-bold text-yellow-400">01</h3><p class="text-xs text-gray-500">Unified Vision</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 text-xs">
+        <p>RainbowPOS Software Development • Sri Lanka</p>
+    </footer>
+
+</body>
+</html>

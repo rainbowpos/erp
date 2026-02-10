@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management | RainbowPOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feature-icon { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition"></i>
+            <span class="font-bold">Back to Home</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Master Your <span class="hero-text">Stock</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+            Stop losing money on missing items. RainbowPOS Inventory gives you a bird's-eye view of every SKU across multiple locations.
+        </p>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 mb-20">
+        <div class="glass rounded-3xl p-4 md:p-8 shadow-2xl shadow-blue-500/10">
+            <div class="flex flex-wrap justify-between items-center mb-8 gap-4">
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fas fa-chart-line text-blue-500"></i> Stock Analytics
+                </h2>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full border border-green-500/30">Total SKU: 1,240</span>
+                    <span class="px-3 py-1 bg-red-500/20 text-red-400 text-xs rounded-full border border-red-500/30">Low Stock: 12</span>
+                </div>
+            </div>
+            
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="feature-icon h-12 w-12 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-barcode text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Smart Barcoding</h4>
+                            <p class="text-gray-400 text-sm">Generate and print barcodes directly from the system. Fast-track your receiving process.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="feature-icon h-12 w-12 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-warehouse text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Multi-Warehouse Support</h4>
+                            <p class="text-gray-400 text-sm">Transfer stock between branches with ease. Track what's in your Kalubowila store vs. Colombo warehouse.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="feature-icon h-12 w-12 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-bell text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Auto-Reorder Alerts</h4>
+                            <p class="text-gray-400 text-sm">Set minimum stock levels and receive instant notifications before you run out of popular items.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="feature-icon h-12 w-12 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-history text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Full Audit Trail</h4>
+                            <p class="text-gray-400 text-sm">Every single item movement is recorded. Know exactly who moved what and when.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-20 bg-blue-600/5 border-y border-white/5">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold mb-6">Seamlessly Syncs with Your Modules</h3>
+            <p class="text-gray-400 mb-10">Our inventory isn't a standalone tool—it's the heart of your business. It updates automatically as you sell, buy, or return items.</p>
+            <div class="flex flex-wrap justify-center gap-8 opacity-50">
+                <div class="text-center"><i class="fas fa-shopping-cart block text-2xl mb-2"></i><span class="text-xs uppercase">Sales</span></div>
+                <div class="text-center text-4xl mt-[-10px]">→</div>
+                <div class="text-center"><i class="fas fa-boxes block text-2xl mb-2"></i><span class="text-xs uppercase">Inventory</span></div>
+                <div class="text-center text-4xl mt-[-10px]">→</div>
+                <div class="text-center"><i class="fas fa-calculator block text-2xl mb-2"></i><span class="text-xs uppercase">Accounting</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 text-center px-6">
+        <div class="glass max-w-3xl mx-auto p-12 rounded-3xl border-blue-500/20">
+            <h2 class="text-3xl font-bold mb-4">Ready to Organize Your Warehouse?</h2>
+            <p class="text-gray-400 mb-8">Contact our Sri Lankan support team for a free inventory audit and software demo.</p>
+            <a href="mailto:rainbowposlk@gmail.com" class="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-blue-500 hover:text-white transition inline-block">Request Inventory Demo</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-xs">
+        <p>RainbowPOS Sri Lanka • 72A, 1/1, Anderson Road, Kalubowila</p>
+    </footer>
+
+</body>
+</html>

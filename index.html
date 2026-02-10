@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainbowPOS | Premium ERP & POS Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; scroll-behavior: smooth; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2)); }
+        .nav-link:hover { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        
+        .map-wrapper { 
+            position: relative; 
+            overflow: hidden; 
+            border-radius: 1rem; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .map-wrapper iframe { 
+            width: 100%; 
+            filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%); 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed w-full z-50 glass">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="RainbowPOS_Logo.png" alt="Logo" class="h-10 w-10 rounded-full border border-white/20">
+                <span class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></span>
+            </div>
+            
+            <ul class="hidden md:flex gap-8 text-sm font-semibold tracking-widest uppercase">
+                <li><a href="#home" class="nav-link transition">Home</a></li>
+                <li><a href="#modules" class="nav-link transition">Modules</a></li>
+                <li><a href="about.html" class="nav-link transition">About</a></li>
+                <li><a href="#contact" class="nav-link transition">Contact</a></li>
+            </ul>
+
+            <a href="tel:+94773498130" class="hidden md:block px-6 py-2 rounded-full border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition font-bold text-center">Call Now</a>
+        </nav>
+    </header>
+
+    <section id="home" class="pt-32 pb-20 px-6 min-h-[80vh] flex flex-col justify-center items-center text-center">
+        <div class="fade-in">
+            <h1 class="text-6xl md:text-8xl font-black mb-6">Manage Better with <br><span class="hero-text">RainbowPOS</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Empower your business with the full spectrum of ERP. From Inventory to Accounting—everything in one place.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#modules" class="px-10 py-4 bg-blue-600 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">Explore Modules</a>
+                <a href="about.html" class="px-10 py-4 glass rounded-xl font-bold hover:bg-white/5 transition text-white">Meet the Team</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-bold mb-4">Enterprise-Grade <span class="text-blue-500">Modules</span></h2>
+            <div class="h-1 w-20 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <a href="pos-sales.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-cash-register text-3xl mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-bold mb-2">POS & Sales</h3>
+                    <p class="text-gray-400 text-sm">Streamlined checkout, invoice generation, and real-time sales tracking.</p>
+                </div>
+            </a>
+
+            <a href="inventory.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-green-500/50 transition duration-300">
+                    <i class="fas fa-boxes-stacked text-3xl mb-4 text-green-500"></i>
+                    <h3 class="text-xl font-bold mb-2">Inventory</h3>
+                    <p class="text-gray-400 text-sm">Advanced stock management, barcoding, and automated notifications.</p>
+                </div>
+            </a>
+
+            <a href="purchasing.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-shopping-cart text-3xl mb-4 text-yellow-500"></i>
+                    <h3 class="text-xl font-bold mb-2">Purchasing</h3>
+                    <p class="text-gray-400 text-sm">Vendor management, automated POs, and full procurement tracking.</p>
+                </div>
+            </a>
+
+            <a href="accounting.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-purple-500/50 transition duration-300">
+                    <i class="fas fa-file-invoice-dollar text-3xl mb-4 text-purple-500"></i>
+                    <h3 class="text-xl font-bold mb-2">Accounting</h3>
+                    <p class="text-gray-400 text-sm">Ledgers, P&L, and localized tax compliance for Sri Lankan businesses.</p>
+                </div>
+            </a>
+
+            <a href="reports.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-pink-500/50 transition duration-300">
+                    <i class="fas fa-chart-line text-3xl mb-4 text-pink-500"></i>
+                    <h3 class="text-xl font-bold mb-2">Reports</h3>
+                    <p class="text-gray-400 text-sm">Visual dashboards, staff performance tracking, and deep-dive analytics.</p>
+                </div>
+            </a>
+
+            <a href="about.html" class="block group">
+                <div class="glass h-full p-8 rounded-2xl fade-in border border-transparent hover:border-orange-500/50 transition duration-300">
+                    <i class="fas fa-user-tie text-3xl mb-4 text-orange-500"></i>
+                    <h3 class="text-xl font-bold mb-2">About Us</h3>
+                    <p class="text-gray-400 text-sm">Meet Founder & CEO H. Umakanth and the team behind RainbowPOS.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 glass mt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-6">Let's Build Something <span class="hero-text">Stunning</span></h2>
+                <div class="map-wrapper mb-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.3106673048835!2d79.8808868323507!3d6.861493958621325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a56b63cba05%3A0xfbeb15f69784b356!2s72a%20Anderson%20Rd%2C%20Dehiwala-Mount%20Lavinia!5e0!3m2!1sen!2slk!4v1770723506895!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-blue-500"></i>
+                        <p>72A, 1/1, Anderson Road, Kalubowila, Sri Lanka.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-blue-500"></i>
+                        <p>rainbowposlk@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone text-blue-500"></i>
+                        <p>+94 773 498 130</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fade-in flex flex-col justify-center">
+                <form action="https://formspree.io/f/rainbowposlk@gmail.com" method="POST" class="space-y-4">
+                    <input type="text" name="name" required placeholder="Your Name" class="w-full p-4 rounded-lg bg-black/50 border border-white/10 focus:border-blue-500 outline-none transition">
+                    <input type="email" name="email" required placeholder="Email Address" class="w-full p-4 rounded-lg bg-black/50 border border-white/10 focus:border-blue-500 outline-none transition">
+                    <textarea name="message" required rows="4" placeholder="How can we help?" class="w-full p-4 rounded-lg bg-black/50 border border-white/10 focus:border-blue-500 outline-none transition"></textarea>
+                    <button type="submit" class="w-full py-4 bg-blue-600 rounded-lg font-bold hover:bg-blue-700 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        <p>© 2026 RainbowPOS Software Development. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

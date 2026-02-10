@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting & Finance | RainbowPOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; }
+        .glass { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .acc-card { border-left: 4px solid #3b82f6; transition: transform 0.3s ease; }
+        .acc-card:hover { transform: translateX(10px); background: rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 group text-gray-400 hover:text-white transition">
+            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition"></i>
+            <span>Back to Dashboard</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <div class="inline-block px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">Financial Integrity</div>
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Precision <span class="hero-text">Accounting</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Eliminate manual bookkeeping errors. RainbowPOS automates your double-entry accounting, so your balance sheet is always accurate and ready for audit.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+            <div class="acc-card glass p-6 rounded-r-xl">
+                <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+                    <i class="fas fa-calculator text-blue-500"></i> General Ledger
+                </h3>
+                <p class="text-gray-400 text-sm">Automated double-entry system that tracks every transaction from Sales, Purchases, and Expenses in real-time.</p>
+            </div>
+
+            <div class="acc-card glass p-6 rounded-r-xl" style="border-left-color: #8b5cf6;">
+                <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+                    <i class="fas fa-file-invoice text-purple-500"></i> Tax Compliance
+                </h3>
+                <p class="text-gray-400 text-sm">Stay compliant with Sri Lankan tax laws. Auto-calculate VAT, SSCL, and generate tax reports with one click.</p>
+            </div>
+
+            <div class="acc-card glass p-6 rounded-r-xl" style="border-left-color: #10b981;">
+                <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+                    <i class="fas fa-university text-green-500"></i> Bank Reconciliation
+                </h3>
+                <p class="text-gray-400 text-sm">Easily match your system records with bank statements. Perfect for tracking cheque payments and bank transfers.</p>
+            </div>
+
+            <div class="acc-card glass p-6 rounded-r-xl" style="border-left-color: #f59e0b;">
+                <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+                    <i class="fas fa-money-check-alt text-yellow-500"></i> Cheque Management
+                </h3>
+                <p class="text-gray-400 text-sm">Integrated return cheque management system to track payment statuses and historical records.</p>
+            </div>
+        </div>
+
+        <div class="lg:col-span-7">
+            <div class="glass rounded-3xl p-8 border border-white/10 h-full flex flex-col justify-center">
+                <div class="mb-8">
+                    <h4 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-2">Automated Financial Statements</h4>
+                    <h2 class="text-3xl font-bold">Real-time P&L Dashboards</h2>
+                </div>
+                
+                
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                        <span class="text-xs text-gray-500 block mb-1">Accounts Receivable</span>
+                        <span class="text-xl font-mono text-green-400 tracking-tighter">LKR 4,250,000.00</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                        <span class="text-xs text-gray-500 block mb-1">Accounts Payable</span>
+                        <span class="text-xl font-mono text-red-400 tracking-tighter">LKR 1,120,500.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-16 glass border-y border-white/5">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h3 class="text-2xl font-bold mb-4">Built for Sri Lankan Accountants</h3>
+            <p class="text-gray-400 mb-8 italic">"We transitioned from manual Excel sheets to RainbowPOS Accounting. The accuracy of our year-end reports improved by 100%."</p>
+            <div class="flex justify-center gap-4">
+                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center font-bold">R</div>
+                <div class="text-left">
+                    <p class="font-bold leading-none">RainbowPOS Development Team</p>
+                    <p class="text-xs text-gray-500">Kalubowila HQ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-gray-600 text-sm mb-2 font-bold tracking-widest uppercase">RainbowPOS</p>
+        <p class="text-gray-500 text-xs px-6">72A, 1/1, Anderson Road, Kalubowila • +94 773 498 130</p>
+    </footer>
+
+</body>
+</html>

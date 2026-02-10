@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS & Sales | RainbowPOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pos-accent { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 group text-gray-400 hover:text-white transition">
+            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition"></i>
+            <span>Back to Home</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Fast. Reliable. <span class="hero-text">Beautiful.</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+            Turn every checkout into a premium experience. Our POS interface is designed for speed, reducing wait times and delighting your customers.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Built for the <span class="text-blue-500">Modern Retailer</span></h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 p-4 rounded-2xl glass hover:bg-white/5 transition">
+                        <i class="fas fa-bolt text-yellow-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Rapid Checkout</h4>
+                            <p class="text-sm text-gray-400">Search products by name, code, or barcode in milliseconds. Perfect for high-traffic stores.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-2xl glass hover:bg-white/5 transition">
+                        <i class="fas fa-wifi-slash text-blue-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Offline Resilience</h4>
+                            <p class="text-sm text-gray-400">Internet down? No problem. Continue selling and sync your data automatically once back online.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-2xl glass hover:bg-white/5 transition">
+                        <i class="fas fa-tags text-green-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Flexible Promotions</h4>
+                            <p class="text-sm text-gray-400">Apply discounts, bundle deals, and loyalty points directly from the sales screen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-20"></div>
+                <div class="relative glass rounded-3xl p-6 border border-white/10">
+                    <div class="flex justify-between items-center mb-4 border-b border-white/10 pb-4">
+                        <span class="font-bold">Terminal #01</span>
+                        <span class="text-xs text-gray-500">Active Session: 04h 22m</span>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-between font-bold text-xl">
+                        <span>Total Payable</span>
+                        <span class="text-green-400">LKR 12,450.00</span>
+                    </div>
+                    <button class="w-full py-4 mt-6 pos-accent rounded-xl font-bold text-white shadow-lg shadow-blue-500/20">PAY NOW (F12)</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-2xl border-t-4 border-blue-500">
+                <i class="fas fa-receipt text-3xl mb-4 text-blue-500"></i>
+                <h3 class="text-xl font-bold mb-2">Invoice Management</h3>
+                <p class="text-gray-400 text-sm">Customizable printed receipts and professional PDF e-invoices sent directly to customer WhatsApp or Email.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-t-4 border-purple-500">
+                <i class="fas fa-undo text-3xl mb-4 text-purple-500"></i>
+                <h3 class="text-xl font-bold mb-2">Returns & Exchanges</h3>
+                <p class="text-gray-400 text-sm">Handle returns effortlessly while automatically updating inventory and accounting ledgers in one step.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-t-4 border-red-500">
+                <i class="fas fa-users-cog text-3xl mb-4 text-red-500"></i>
+                <h3 class="text-xl font-bold mb-2">Multi-User Security</h3>
+                <p class="text-gray-400 text-sm">Assign specific permissions to cashiers vs. managers to prevent unauthorized discounts or price changes.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-20 text-center px-6 border-t border-white/5">
+        <h2 class="text-3xl font-bold mb-6">Designed for Sri Lankan Businesses</h2>
+        <p class="text-gray-400 mb-8 max-w-xl mx-auto">From boutiques in Colombo to warehouses in Kalubowila, RainbowPOS is the trusted choice for sales efficiency.</p>
+        <a href="tel:+94773498130" class="px-10 py-4 pos-accent rounded-full font-bold inline-block hover:scale-105 transition">Call for a Live Demo</a>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-xs">
+        <p>RainbowPOS Software Development • 72A, 1/1, Anderson Road, Kalubowila</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchasing & Vendor Management | RainbowPOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --rainbow-grad: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3); }
+        body { background-color: #05070a; color: #e2e8f0; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-text { background: var(--rainbow-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pur-accent { border-top: 4px solid #f59e0b; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 group text-gray-400 hover:text-white transition">
+            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition"></i>
+            <span>Back to Home</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter uppercase">Rainbow<span class="text-blue-500">POS</span></div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Streamline Your <span class="hero-text">Supply Chain</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            From Request for Quotation (RFQ) to final Goods Received Note (GRN). Manage your vendors and procurement with total transparency.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            <div class="relative glass rounded-3xl p-8 border border-white/10">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="font-bold text-xl">Purchase Order #PO-8821</h3>
+                    <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded-full">Pending Approval</span>
+                </div>
+                
+                
+                
+                <div class="mt-6 pt-6 border-t border-white/5 space-y-3">
+                    <div class="flex justify-between text-sm"><span class="text-gray-500">Vendor:</span><span>Lanka Supplies Ltd.</span></div>
+                    <div class="flex justify-between text-sm"><span class="text-gray-500">Total Items:</span><span>24 Units</span></div>
+                    <div class="flex justify-between font-bold text-lg text-blue-400"><span>Total Value:</span><span>LKR 450,200.00</span></div>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div class="flex gap-6">
+                    <div class="h-14 w-14 shrink-0 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                        <i class="fas fa-file-signature text-blue-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Automated PO Generation</h4>
+                        <p class="text-gray-400">Tired of manual entries? RainbowPOS creates Purchase Orders automatically based on your reorder points, ensuring you never run out of stock.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="h-14 w-14 shrink-0 rounded-2xl bg-green-500/10 flex items-center justify-center border border-green-500/20">
+                        <i class="fas fa-truck-loading text-green-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Partial GRN Handling</h4>
+                        <p class="text-gray-400">Easily track shipments that arrive in multiple batches. The system keeps track of what was ordered vs. what was actually received.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="h-14 w-14 shrink-0 rounded-2xl bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+                        <i class="fas fa-handshake text-purple-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Vendor Performance</h4>
+                        <p class="text-gray-400">Keep a history of vendor lead times and pricing trends to negotiate better deals for your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-3xl pur-accent">
+                <h3 class="text-2xl font-bold mb-4">Smart Costing</h3>
+                <p class="text-gray-400 leading-relaxed">Automatically update your "Land Cost" by including shipping, duties, and handling fees into the product price. This ensures your Profit & Loss reports are 100% accurate.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl pur-accent" style="border-top-color: #10b981;">
+                <h3 class="text-2xl font-bold mb-4">Direct Sync to Odoo</h3>
+                <p class="text-gray-400 leading-relaxed">Using our custom API solutions, sync your local purchase records with Odoo ERP instantly. Keep your cloud and local databases in perfect harmony.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-24 text-center px-6">
+        <h2 class="text-3xl font-bold mb-8">Ready to Optimize Your Buying?</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:rainbowposlk@gmail.com" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition">Contact Procurement Specialist</a>
+            <a href="tel:+94773498130" class="px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition">Call Support</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-xs">
+        <p>RainbowPOS • 72A, 1/1, Anderson Road, Kalubowila, Sri Lanka</p>
+    </footer>
+
+</body>
+</html>
